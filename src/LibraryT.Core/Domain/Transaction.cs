@@ -13,7 +13,7 @@ namespace LibraryT.Domain
         public DateTime CheckOutDate { get; set; }
         public DateTime DueDate { get; set;}
 
-        public string ReturnedDate { get; set; }
+        public DateTime ReturnedDate { get; set; }
 
         public Book Book { get; set; }
 

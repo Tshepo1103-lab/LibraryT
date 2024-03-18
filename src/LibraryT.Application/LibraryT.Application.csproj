@@ -14,10 +14,4 @@
   <ItemGroup>
     <ProjectReference Include="..\LibraryT.Core\LibraryT.Core.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\CategoryService\CategoryDto\" />
-    <Folder Include="Services\ReviewsService\ReviewDto\" />
-    <Folder Include="Services\ShelfService\ShelfDto\" />
-    <Folder Include="Services\TransactionService\TransactionDto\" />
-  </ItemGroup>
 </Project>

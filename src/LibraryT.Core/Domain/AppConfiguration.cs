@@ -14,6 +14,9 @@ namespace LibraryT.Domain
         public string Address {  get; set; }
         public string PrimaryColor { get; set; }
         public string SecondaryColor { get; set;}
+        public string EmailAddress { get; set; }
+        public string Contact {  get; set; }
+        public string AboutMessage { get; set; }
 
     }
 }

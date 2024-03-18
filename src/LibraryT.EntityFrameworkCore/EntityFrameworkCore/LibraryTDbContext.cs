@@ -20,8 +20,8 @@ namespace LibraryT.EntityFrameworkCore
         public DbSet<Category> Categories { get; set; }
         public DbSet<Shelf> Shelf { get; set; }
         public DbSet<Review> Reviews { get; set; }
-        //public DbSet<Fine> Fines { get; set; }
-        //public DbSet<Notification> Notifications {  get; set; }
+        public DbSet<Fine> Fines { get; set; }
+        public DbSet<Notification> Notifications {  get; set; }
         public DbSet<AppConfiguration> AppConfigurations { get; set; }
         public DbSet<TradingHour> TradingHours { get; set; }
 
