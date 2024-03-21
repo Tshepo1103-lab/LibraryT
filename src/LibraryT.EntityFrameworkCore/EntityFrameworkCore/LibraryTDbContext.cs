@@ -24,6 +24,7 @@ namespace LibraryT.EntityFrameworkCore
         public DbSet<Notification> Notifications {  get; set; }
         public DbSet<AppConfiguration> AppConfigurations { get; set; }
         public DbSet<TradingHour> TradingHours { get; set; }
+        public DbSet<Person> Persons { get; set; }
 
     }
 }
