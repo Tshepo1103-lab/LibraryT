@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LibraryT.Services.ShelfService.Dto
 {
-    [AutoMapFrom(typeof(Shelf))]
+    //[AutoMapFrom(typeof(Shelf))]
     public class ShelfDto: EntityDto<Guid>
     {
         public string Name { get; set; }

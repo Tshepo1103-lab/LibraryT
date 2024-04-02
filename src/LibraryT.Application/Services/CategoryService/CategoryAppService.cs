@@ -22,20 +22,13 @@ namespace LibraryT.Services.CategoryService
         }
         public override async Task<CategoryDto> CreateAsync(CategoryDto input)
         {
-            try
-            {
+            
                 var category = ObjectMapper.Map<Category>(input);
                 Console.WriteLine(input.ShelfId);
                 category.Shelf = await _shelfRepository.GetAsync(input.ShelfId); // Assuming GetAsync exists
                 var result = await _repository.InsertAsync(category);
-                return ObjectMapper.Map<CategoryDto>(result);
-            }
-            catch (Exception ex)
-            {
-                // Log the exception details for debugging
-                Console.WriteLine(ex.Message);
-                throw; // Rethrow the exception after logging
-            }
+                return ObjectMapper.Map<CategoryDto>(result);     
+           
         }
 
         public async Task<List<CategoryDto>> GetAllIncluding(Guid shelfId)

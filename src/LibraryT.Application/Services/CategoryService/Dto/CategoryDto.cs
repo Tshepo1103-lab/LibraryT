@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LibraryT.Services.CategoryService.Dto
 {
-    [AutoMapFrom(typeof(Category))]
+    ///[AutoMapFrom(typeof(Category))]
     public class CategoryDto: EntityDto<Guid>
     {
         public string Name { get; set; }

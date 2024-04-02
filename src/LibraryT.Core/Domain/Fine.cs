@@ -10,7 +10,6 @@ namespace LibraryT.Domain
     public class Fine:FullAuditedEntity<Guid>
     {
         public decimal Amount {  get; set; }
-        public string Status { get; set; }
 
         public Transaction Transaction { get; set; }
     }

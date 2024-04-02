@@ -12,6 +12,9 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Twilio" Version="7.0.3" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\LibraryT.Core\LibraryT.Core.csproj" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Entities.Auditing;
+using LibraryT.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,5 @@ namespace LibraryT.Domain
         public string Name { get; set; }
 
         public Shelf Shelf { get; set; }
-
     }
 }

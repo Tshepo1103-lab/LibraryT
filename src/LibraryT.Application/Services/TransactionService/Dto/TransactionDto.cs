@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace LibraryT.Services.TransactionService.Dto
 {
-    [AutoMapFrom(typeof(Transaction))]
+    [AutoMap(typeof(Transaction))]
     public class TransactionDto: EntityDto<Guid>
     {
         public DateTime CheckOutDate { get; set; }
@@ -20,6 +20,6 @@ namespace LibraryT.Services.TransactionService.Dto
 
         public Guid BookId { get; set; }
 
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
     }
 }

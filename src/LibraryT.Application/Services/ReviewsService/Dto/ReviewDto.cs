@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace LibraryT.Services.ReviewsService.Dto
 {
-    [AutoMapFrom(typeof(Review))]
+   //[AutoMapFrom(typeof(Review))]
     public class ReviewDto:EntityDto<Guid>
     {
         public int Rating { get; set; }

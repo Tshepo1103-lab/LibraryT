@@ -9,14 +9,38 @@ namespace LibraryT.Domain
 {
     public class Book: FullAuditedEntity<Guid>
     {
-        public string ISBN { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string[] Author { get; set; }
-        public DateTime PublishedDate { get; set; }
-        public int Quantity {  get; set; }
-        public string Url { get; set; }
-        public Category Category { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string ISBN { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string Title { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string Description { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string Author { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual DateTime? PublishedDate { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual int? Quantity {  get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual string Url { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public virtual Category Category { get; set; } //
 
     }
 }

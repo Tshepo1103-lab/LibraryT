@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace LibraryT.Services.PersonService.Dto
 {
-    [AutoMapFrom(typeof(Person))]
+    //[AutoMapFrom(typeof(Person))]
     public class PersonDto: EntityDto<Guid>
     {
         public string UserName { get; set; }
