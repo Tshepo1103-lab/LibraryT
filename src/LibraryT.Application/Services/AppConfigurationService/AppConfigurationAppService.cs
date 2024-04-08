@@ -15,5 +15,6 @@ namespace LibraryT.Services.AppConfigurationService
         public AppConfigurationAppService(IRepository<AppConfiguration, Guid> repository) : base(repository)
         {
         }
+
     }
 }

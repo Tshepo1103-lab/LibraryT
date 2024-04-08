@@ -20,7 +20,10 @@ namespace LibraryT.Services.BookService.Dto
         public DateTime? PublishedDate { get; set; }
         public int? Quantity { get; set; }
         public string Url { get; set; }
-
-        public Guid? CategoryId { get; set; }
+        public int Count { get; set; }
+        public Guid CategoryId { get; set; }
+        
+        public Category Category {  get; set; }
+        
     }
 }

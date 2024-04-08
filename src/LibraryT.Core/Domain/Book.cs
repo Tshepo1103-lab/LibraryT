@@ -37,6 +37,7 @@ namespace LibraryT.Domain
         /// 
         /// </summary>
         public virtual string Url { get; set; }
+        public virtual int? Count { get; set; }
         /// <summary>
         /// 
         /// </summary>

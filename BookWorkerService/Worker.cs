@@ -1,4 +1,4 @@
-using Newtonsoft.Json.Linq;
+/*using Newtonsoft.Json.Linq;
 
 namespace BookWorkerService
 {
@@ -15,14 +15,14 @@ namespace BookWorkerService
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            /*while (!stoppingToken.IsCancellationRequested)
+            *//*while (!stoppingToken.IsCancellationRequested)
             {
                 if (_logger.IsEnabled(LogLevel.Information))
                 {
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 }
                 await Task.Delay(1000, stoppingToken);
-            }*/
+            }*//*
             await GetBooksAsync(stoppingToken);
 
         }
@@ -41,7 +41,7 @@ namespace BookWorkerService
             Console.WriteLine(bookdata);
 
             foreach (var bookInfo in bookdata) {
-                var title = bookInfo["volumeInfo"]
+                var title = bookInfo["volumeInfo"];
                 
             }
         }
@@ -50,3 +50,4 @@ namespace BookWorkerService
 
     }
 }
+*/

@@ -23,6 +23,7 @@ namespace LibraryT.Services.PersonService
                 .ForMember(x => x.EmailAddress, m => m.MapFrom(x => x.EmailAddress))
                 .ForMember(x => x.Password, m => m.MapFrom(x => x.Password))
                 .ForMember(x => x.Surname, m => m.MapFrom(x => x.Surname))
+                .ForMember(x => x.Roles, m => m.MapFrom(x => x.RoleNames))
                 .ForMember(x => x.UserName, m => m.MapFrom(x => x.Name + x.Surname.Substring(0, 4)));
 
 

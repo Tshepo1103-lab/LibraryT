@@ -1,4 +1,4 @@
-using BookWorkerService;
+/*using BookWorkerService;
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddHostedService<Worker>();
@@ -15,5 +15,5 @@ builder.Services.AddHttpClient("customEndpoints", client =>
 //injecting the worker service
 builder.Services.AddHostedService<Worker>();
 var host = builder.Build();
-host.Run();
+*//*host.Run();*/
 

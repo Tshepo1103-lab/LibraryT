@@ -5,6 +5,7 @@ using LibraryT.Authorization.Users;
 using LibraryT.Domain;
 using LibraryT.Services.PersonService.Dto;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,6 +52,17 @@ namespace LibraryT.Services.PersonService
         protected virtual void CheckErrors(IdentityResult identityResult)
         {
             identityResult.CheckErrors(LocalizationManager);
+        }
+        [HttpGet]
+        public async Task<int> GetUserCountAsync()
+        {
+            return await _personRepository.CountAsync();
+        }
+
+        public async Task<PersonDto> GetCurrentPerson()
+        {
+            var query =  await _personRepository.FirstOrDefaultAsync(x=>x.User.Id==AbpSession.UserId);
+            return ObjectMapper.Map<PersonDto>(query);
         }
     }
 }
